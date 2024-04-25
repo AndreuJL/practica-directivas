@@ -1,14 +1,18 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AppComponent } from './app.component'
+import { ErrorImageDirective } from './directives/error-image.directive'
+import { CommonModule } from '@angular/common'
 
-import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CommonModule,
+    ErrorImageDirective,
   ],
   providers: [],
   bootstrap: [AppComponent]
